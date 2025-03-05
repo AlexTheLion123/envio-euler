@@ -1,0 +1,9 @@
+type EVault_Liquidate {
+  id: ID!
+  liquidator: String!
+  violator: String!
+  collateral: String!
+  repayAssets: BigInt!
+  yieldBalance: BigInt!
+}
+
