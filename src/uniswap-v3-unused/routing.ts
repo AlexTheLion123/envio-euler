@@ -36,7 +36,7 @@ import { fromReadableAmount } from './uniswap-v3/conversion'
 import { ethers } from 'ethers'
 import { BASE_CHAIN_ID } from './uniswap-v3/constants'
 import { Token } from '@uniswap/sdk-core'
-import { tokens } from './tokens'
+import { tokens } from '../tokens'
 
 
 // Public RPC URLs (Choose one)

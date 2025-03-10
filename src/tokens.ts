@@ -1,5 +1,5 @@
 import { Token } from '@uniswap/sdk-core'
-import { BASE_CHAIN_ID } from './constants'
+import { BASE_CHAIN_ID } from './uniswap-v3-unused/constants'
 
 export const USDC_TOKEN = new Token(
     BASE_CHAIN_ID,

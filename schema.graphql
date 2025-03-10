@@ -5,6 +5,7 @@ type EVault_Liquidate {
   collateral: String!
   repayAssets: BigInt!
   collateralReward: BigInt!
+  usdValue: Float!
 }
 
 type EVault_Withdraw {
@@ -22,6 +23,19 @@ type EVault_Deposit {
   receiver: String!
   assets: BigInt!
   shares: BigInt!
+}
+
+type EVault_VaultStatus {
+  id: ID!
+  vaultAddress: String!
+  totalShares: BigInt!
+  totalBorrows: BigInt!
+  accumulatedFees: BigInt!
+  cash: BigInt!
+  interestAccumulator: BigInt!
+  interestRate: BigInt!
+  timestamp: BigInt!
+  blockNumber: BigInt!
 }
 
 
