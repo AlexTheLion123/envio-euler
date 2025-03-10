@@ -22,7 +22,7 @@ EVault.Liquidate.handler(async ({ event, context }) => {
     collateralReward: event.params.collateralReward,
   };
 
-  console.log(`${event.transaction.hash} Collateral: ${entity.collateral}, RepayAssets: ${entity.repayAssets}, YieldBalance: ${entity.collateralReward}`);
+  console.log(`${event.transaction.hash} Collateral: ${entity.collateral}, RepayAssets: ${entity.repayAssets}, collateralReward: ${entity.collateralReward}`);
 
   context.EVault_Liquidate.set(entity);
 });

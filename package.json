@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@uniswap/smart-order-router": "^4.20.0",
-    "envio": "2.4.4",
+    "envio": "2.13.0",
     "ethers": "5.7.2"
   },
   "optionalDependencies": {
