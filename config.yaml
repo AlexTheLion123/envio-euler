@@ -29,5 +29,12 @@ networks:
     - 0x646A9C23Ec52C80bf436B2b1a5A9ECEA9a63c55C
     handler: src/EventHandlers.ts
     events:
-    - event: Liquidate(address indexed liquidator, address indexed violator, address collateral, uint256 repayAssets, uint256 yieldBalance)
+    - event: Liquidate(address indexed liquidator, address indexed violator, address collateral, uint256 repayAssets, uint256 collateralReward)
+    - event: Withdraw(address indexed sender, address indexed receiver, address indexed owner, uint256 assets, uint256 shares)
+    - event: Deposit(address indexed sender, address indexed receiver, uint256 assets, uint256 shares)
 rollback_on_reorg: false
+field_selection:
+  transaction_fields:
+    - "hash"
+    # - "transactionIndex"
+    # - "gasUsed"

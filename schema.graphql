@@ -7,3 +7,22 @@ type EVault_Liquidate {
   yieldBalance: BigInt!
 }
 
+type EVault_Withdraw {
+  id: ID!
+  sender: String!
+  receiver: String!
+  owner: String!
+  assets: BigInt!
+  shares: BigInt!
+}
+
+type EVault_Deposit {
+  id: ID!
+  sender: String!
+  receiver: String!
+  assets: BigInt!
+  shares: BigInt!
+}
+
+
+

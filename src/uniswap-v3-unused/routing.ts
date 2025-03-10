@@ -32,9 +32,9 @@ import {
   SwapType,
 } from '@uniswap/smart-order-router'
 import { TradeType, CurrencyAmount, Percent } from '@uniswap/sdk-core'
-import { fromReadableAmount } from './conversion'
+import { fromReadableAmount } from './uniswap-v3/conversion'
 import { ethers } from 'ethers'
-import { BASE_CHAIN_ID } from './constants'
+import { BASE_CHAIN_ID } from './uniswap-v3/constants'
 import { Token } from '@uniswap/sdk-core'
 import { tokens } from './tokens'
 

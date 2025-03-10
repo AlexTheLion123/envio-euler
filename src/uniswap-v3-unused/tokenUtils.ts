@@ -1,6 +1,6 @@
 import { Token } from '@uniswap/sdk-core';
 import { ethers } from 'ethers';
-import { BASE_CHAIN_ID } from './constants';
+import { BASE_CHAIN_ID } from './uniswap-v3/constants';
 
 // Standard ERC20 ABI - only including functions we need
 const ERC20_ABI = [
