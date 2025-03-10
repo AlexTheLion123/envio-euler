@@ -4,7 +4,7 @@ type EVault_Liquidate {
   violator: String!
   collateral: String!
   repayAssets: BigInt!
-  yieldBalance: BigInt!
+  collateralReward: BigInt!
 }
 
 type EVault_Withdraw {

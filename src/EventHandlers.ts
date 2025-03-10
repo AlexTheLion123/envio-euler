@@ -19,10 +19,10 @@ EVault.Liquidate.handler(async ({ event, context }) => {
     violator: event.params.violator,
     collateral: event.params.collateral,
     repayAssets: event.params.repayAssets,
-    yieldBalance: event.params.collateralReward,
+    collateralReward: event.params.collateralReward,
   };
 
-  console.log(`${event.transaction.hash} Collateral: ${entity.collateral}, RepayAssets: ${entity.repayAssets}, YieldBalance: ${entity.yieldBalance}`);
+  console.log(`${event.transaction.hash} Collateral: ${entity.collateral}, RepayAssets: ${entity.repayAssets}, YieldBalance: ${entity.collateralReward}`);
 
   context.EVault_Liquidate.set(entity);
 });
